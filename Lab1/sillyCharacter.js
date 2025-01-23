@@ -58,6 +58,13 @@ function decreaseAge() {
 }
 
 
+// Random age function
+function generateRandomAge() {
+    age = Math.floor(Math.random() * 100) + 1;  // Generates a random age between 1 and 100
+    updateCharacterDescription();
+}
+
+
 
 
 // Function to update the character's description after changing age
