@@ -47,6 +47,15 @@ function updateCharacterDescription() {
 }
 
 // Functions to update character's age
+function increaseAge() {
+    age++;
+    updateCharacterDescription();
+}
+
+function decreaseAge() {
+    age++;
+    updateCharacterDescription();
+}
 
 
 
