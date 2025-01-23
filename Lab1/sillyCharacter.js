@@ -33,7 +33,11 @@ display the character's attributes in a creative and humorous way.
 */
 
 // Declare and initialize variables
-
+let characterName = 'Silly Sammy';
+let age = 25;  // Default starting age
+let isSuperhero = false; 
+let specialPowers = ['invisibility', 'super strength'];  
+let favoriteFood = 'spaghetti'; 
 
 
 // Function to generate a random character description
