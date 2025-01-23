@@ -41,7 +41,10 @@ let favoriteFood = 'spaghetti';
 
 
 // Function to generate a random character description
-
+function updateCharacterDescription() {
+    let description = `Meet ${characterName}, a ${age}-year-old ${isSuperhero ? 'superhero' : 'regular person'} who loves ${favoriteFood} and can ${specialPowers.join(' and ')}.`;
+    document.getElementById('characterDescription').innerText = description;
+}
 
 // Functions to update character's age
 
