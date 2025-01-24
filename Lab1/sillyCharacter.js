@@ -63,6 +63,11 @@ function generateRandomAge() {
     age = Math.floor(Math.random() * 100) + 1;  // Generates a random age between 1 and 100
     updateCharacterDescription();
 }
+// Function to update character's favorite food
+function updateFood(newFood) {
+    favoriteFood = newFood;
+    updateCharacterDescription(); // Update the description to reflect the new favorite food
+}
 
 
 
