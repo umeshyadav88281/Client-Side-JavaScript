@@ -70,6 +70,13 @@ function updateFood(newFood) {
 }
 
 
+// Function to update character's name
+function updateName(newName) {
+    characterName = newName;
+    updateCharacterDescription(); // Update the description to reflect the new name
+}
+
+
 
 
 // Function to update the character's description after changing age
