@@ -78,9 +78,16 @@ function updateName(newName) {
 
 
 
+// Add event listeners for buttons and inputs using querySelector
+document.addEventListener('DOMContentLoaded', function() {
+    // Set up button to generate a random age and update the description
+    document.getElementById('generateButton').addEventListener('click', generateRandomAge);
 
-// Function to update the character's description after changing age
+    // Set up buttons to increase and decrease the age
+    document.getElementById('increaseAgeButton').addEventListener('click', increaseAge);
+    document.getElementById('decreaseAgeButton').addEventListener('click', decreaseAge);
 
-
-// Add event listeners for buttons using querySelector
-
+    // Set up input fields to update name and favorite food
+    document.getElementById('nameInput').addEventListener('change', (event) => updateName(event.target.value));
+    document.getElementById('foodInput').addEventListener('change', (event) => updateFood(event.target.value));
+});
