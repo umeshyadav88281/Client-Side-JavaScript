@@ -83,4 +83,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set up button to generate a random age and update the description
     document.getElementById('generateButton').addEventListener('click', generateRandomAge);
 
+    // Set up buttons to increase and decrease the age
+    document.getElementById('increaseAgeButton').addEventListener('click', increaseAge);
+    document.getElementById('decreaseAgeButton').addEventListener('click', decreaseAge);
+
+   
 });
