@@ -83,11 +83,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set up button to generate a random age and update the description
     document.getElementById('generateButton').addEventListener('click', generateRandomAge);
 
-    // Set up buttons to increase and decrease the age
-    document.getElementById('increaseAgeButton').addEventListener('click', increaseAge);
-    document.getElementById('decreaseAgeButton').addEventListener('click', decreaseAge);
-
-    // Set up input fields to update name and favorite food
-    document.getElementById('nameInput').addEventListener('change', (event) => updateName(event.target.value));
-    document.getElementById('foodInput').addEventListener('change', (event) => updateFood(event.target.value));
 });
