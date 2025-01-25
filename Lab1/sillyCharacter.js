@@ -53,7 +53,7 @@ function increaseAge() {
 }
 
 function decreaseAge() {
-    age++;
+    age--;
     updateCharacterDescription();
 }
 
