@@ -46,6 +46,12 @@ function updateCharacterDescription() {
     document.getElementById('characterDescription').innerText = description;
 }
 
+
+function toggleSuperheroStatus() {
+    isSuperhero = !isSuperhero; // Toggle the boolean value
+    updateCharacterDescription(); // Update the description to reflect the new superhero status
+}
+
 // Functions to update character's age
 function increaseAge() {
     age++;
@@ -90,4 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set up input fields to update name and favorite food
     document.getElementById('nameInput').addEventListener('change', (event) => updateName(event.target.value));
     document.getElementById('foodInput').addEventListener('change', (event) => updateFood(event.target.value));
+    document.getElementById('superheroCheckbox').addEventListener('change', toggleSuperheroStatus);
+
+
 });
