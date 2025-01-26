@@ -87,5 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('increaseAgeButton').addEventListener('click', increaseAge);
     document.getElementById('decreaseAgeButton').addEventListener('click', decreaseAge);
 
-   
+    // Set up input fields to update name and favorite food
+    document.getElementById('nameInput').addEventListener('change', (event) => updateName(event.target.value));
+    document.getElementById('foodInput').addEventListener('change', (event) => updateFood(event.target.value));
 });
