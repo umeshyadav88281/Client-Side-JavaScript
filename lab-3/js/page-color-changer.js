@@ -12,3 +12,8 @@ function updateBackgroundColor() {
     const rgbColor = `rgb(${red}, ${green}, ${blue})`;
     pageBody.style.backgroundColor = rgbColor;
 }
+
+// Event listeners for the range sliders
+redSlider.addEventListener('input', updateBackgroundColor);
+greenSlider.addEventListener('input', updateBackgroundColor);
+blueSlider.addEventListener('input', updateBackgroundColor);
